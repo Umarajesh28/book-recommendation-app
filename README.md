@@ -16,10 +16,10 @@ book_app/
 │── models/
 │   ├── content_similarity_matrix.pkl
 │   ├── kmeans_clustering_model.pkl
-│── notebooks/
-│   ├── Audible_Book_Data_preparation_Eda.ipynb
-│   ├── Audible_nlp_clustering.ipynb
-│   ├── Audible_Recommendation_System.ipynb
+
+│── Audible_Book_Data_preparation_Eda.ipynb
+│──  Audible_nlp_clustering.ipynb
+│──  Audible_Recommendation_System.ipynb
 │── app.py  # Streamlit web application
 │── books_clusters.csv  # Processed dataset
 │── requirements.txt  # Required dependencies
