@@ -51,16 +51,18 @@ st.markdown("""
 # Cache loading models and data to avoid reloading every time
 @st.cache_data
 def load_data():
-    return pd.read_csv("/home/ubuntu/book_app/books_clusters.csv")
+   return pd.read_csv("books_clusters.csv")
+
+
 
 @st.cache_resource
 def load_content_sim_matrix_model():
-    with open("/home/ubuntu/book_app/models/content_similarity_matrix.pkl", "rb") as file:
+    with open("models/content_similarity_matrix.pkl", "rb") as file:
         return pickle.load(file)
 
 @st.cache_resource
 def load_kmeans_model():
-    with open("/home/ubuntu/book_app/models/kmeans_clustering_model.pkl", "rb") as file:
+    with open("models/kmeans_clustering_model.pkl", "rb") as file:
         return pickle.load(file)
 
 # Load dataset and models
